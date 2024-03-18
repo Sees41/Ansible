@@ -1,0 +1,13 @@
+---
+
+
+  - hosts: all
+    become: true
+    tasks: 
+
+
+    - name : Bu gorev, tum workerler'da update islemini yapar.
+      apt: 
+       update_cache: yes
+       upgrade: yes
+       
